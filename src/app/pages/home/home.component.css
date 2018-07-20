@@ -1,3 +1,9 @@
-body{
-	background-image: url('../../../assets/abstract.jpg');
+h1 {
+	font-family: 'Russo One', sans-serif;
+	margin-top: 10vh;
+}
+
+p { 
+	font-family: 'Monda', sans-serif;
+	font-size: 1.4em;
 }
