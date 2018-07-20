@@ -10,6 +10,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  	//document.body.style.backgroundImage = "url('abstract.jpg')";
+    //document.body.style.backgroundSize = "cover";
+    //document.body.style.backgroundAttachment = "fixed";
   }
 
 }
