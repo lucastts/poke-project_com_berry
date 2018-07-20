@@ -27,6 +27,7 @@ export class PokemonsComponent implements OnInit {
     		(res)=>{
           		this.pokemons.push(res); 
           		console.log(res);
+              console.log(res.types[0].type.name)
         	}
       	)
   	}

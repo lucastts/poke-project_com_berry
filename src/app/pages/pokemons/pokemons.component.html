@@ -10,10 +10,14 @@
 		
 	  <div class="container row">
 	    <div class="col s12 m6 l3" *ngFor="let pokemon of pokemons">
-	      <div class="card small">
+	      <div class="card small center">
 	        <div class="card-content white-text">
-	          <span class="name card-title">{{pokemon.name}}</span>
-	          <img src="{{pokemon.sprites.front_shiny}}">
+	        	<span class="name card-title">{{pokemon.name}}</span>
+	        	<div>
+	        		<span class="type">{{pokemon.types[0].type.name}}</span>
+	          		<span class="type">{{pokemon.types[1].type.name}}</span>
+	          	</div>
+	          	<img src="{{pokemon.sprites.front_shiny}}">
 	        </div>
 
 	      </div>
