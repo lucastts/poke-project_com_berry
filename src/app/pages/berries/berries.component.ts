@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PokemonService } from '../../services/pokemon/pokemon.service';
+
 
 @Component({
   selector: 'app-berries',
@@ -7,9 +9,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BerriesComponent implements OnInit {
 
-  constructor() { }
+	berries = [];
+	id :number;
+
+  constructor(public berryService: PokemonService) { 
+  	this.id = 0;
+  }
 
   ngOnInit() {
+  }
+
+  getBerry(){
+  	this.id++;
+  	this.berryService.getBerry(this.id)
+  	.subscribe(
+  		(res)=>{
+  			this.berries.push(res);
+  			console.log(res);
+  		}
+  	)
   }
 
 }

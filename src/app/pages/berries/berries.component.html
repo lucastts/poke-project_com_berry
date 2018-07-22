@@ -1,3 +1,12 @@
-<p>
-  berries works!
-</p>
+<div class="row center">
+	<a class="botao waves-effect waves-light red darken-4 btn-large" (click)="getBerry()">Berry Button</a>
+</div>
+
+<div class="container row">
+	<div class="col s12 m6 l3" *ngFor="let berry of berries">
+  		<div class="card small center">
+    		<div class="card-content white-text">
+    			<span class="name card-title">{{berry.name}}</span><!--Infelizmente o api n tem sprite das berries -->
+    	</div>
+  	</div>
+</div>

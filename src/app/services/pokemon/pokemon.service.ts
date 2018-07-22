@@ -15,4 +15,8 @@ export class PokemonService {
   getPokemon(id):Observable<any>{
     return this.http.get(this.pokeApiUrl+'pokemon/'+id).map(res=> res);
   }
+
+  getBerry(id):Observable<any>{
+  	return this.http.get(this.pokeApiUrl+'berry/'+id).map(res=> res);
+  }
 }
